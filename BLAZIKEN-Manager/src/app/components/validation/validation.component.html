@@ -1,0 +1,55 @@
+<body>
+    <header>
+      <!-- Navbar -->
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+  
+          <!-- Logotipo -->
+          <div class="navbar-brand">
+            <img id="logo" src="./assets/imgs/logo.png" alt="BLAZIKEN™" routerLink="">
+          </div>
+
+        </nav>
+      </div>
+    </header>
+  
+    <!-- Card-Manager -->
+    <section id="login-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h1 class="login-name">MANAGER ACCESS</h1>
+            <div class="card mt-2">
+              <div class="card-body">
+  
+                <!-- Formulário com login e senha -->
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Usuário</label>
+                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Digite seu Usuário"
+                      name="User" [(ngModel)]="Manager.user">
+                  </div>
+                  <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control form-control-lg" id="senha" placeholder="Digite sua senha"
+                      name="senha" [(ngModel)]="Manager.password">
+                  </div>
+                  <input type="submit" class="btn btn-lg main-btn" value="Entrar" (click)="enter(Manager.user,Manager.password)">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- Pseudo-Footer -->
+    <div class="footerr">
+      <p>Copyright 2023 © - BLAZIKEN™</p>
+    </div>
+  
+  
+    <!--depois de logar seria o ideal que protasse um logado com sucesso que levasse pra pagina inicial, a mesma lo
+    gica pra cadastro só  que ora login -->
+  </body>
